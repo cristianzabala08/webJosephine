@@ -1,0 +1,153 @@
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100pt; /* Matching original width */
+  background: white;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  background-color: rgb(127, 127, 127);
+  color: white;
+  padding: 10pt; /* Approx 30px */
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 36pt;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+/* Content Wrapper (Sidebar + Main) */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar Navigation */
+aside {
+  width: 280pt; /* Approx 300px */
+  background-color: rgb(58, 55, 55);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  border-bottom: 1px solid #444;
+}
+
+.menu-item a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-size: 13pt;
+  transition: background-color 0.3s;
+}
+
+.menu-item a:hover {
+  background-color: #444;
+}
+
+.menu-item.active-menu {
+  background-color: white;
+}
+
+.menu-item.active-menu a {
+  color: black;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  background-color: #cfcece; /* Matching original index background */
+  padding: 30px;
+}
+
+/* Card Style for Content */
+.content-card {
+  background: white;
+  padding: 40pt;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 600pt;
+  font-family: "Times New Roman", serif;
+}
+
+/* Content Typography */
+.content-card h1 {
+  font-size: 24pt;
+  color: #222;
+  margin-bottom: 10pt;
+  text-align: center;
+}
+
+.content-card h2 {
+  font-size: 18pt;
+  color: #444;
+  margin-bottom: 20pt;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-block {
+  margin-top: 20pt;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.info-block p {
+  margin-bottom: 15px;
+}
+
+/* Specific for content pages */
+.text-content {
+  text-align: justify;
+  font-family: "Arial", sans-serif;
+  font-size: 12pt;
+  line-height: 1.8;
+}
+
+.text-content p {
+  margin-bottom: 1em;
+}
+
+.text-content ul {
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+.text-content li {
+  margin-bottom: 0.5em;
+}
